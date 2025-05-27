@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países - Comparação das Cartas
+// Desafio Super Trunfo - Comparação das Cartas
 
 int main() {
     // Definindo as variáveis que armazenam as propriedades das cidades:
     
     char nomeCidade1[25], nomeCidade2[25];
     char estado1, estado2;
-    char codigo1[5], codigo2[5];
+    char cod1[5], cod2[5];
     float populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
@@ -22,7 +22,7 @@ int main() {
     printf("Estado (A-H): ");
     scanf(" %c", &estado1);
     printf("Digite o código da Carta (ex: 01 a 04): ");
-    scanf(" %s", codigo1);
+    scanf(" %s", cod1);
     printf("Populacao (milhões): ");   
     scanf("%f", &populacao1);
     printf("Area (km²): ");            
@@ -39,7 +39,7 @@ int main() {
     printf("Estado (A-H): ");
     scanf(" %c", &estado2);
     printf("Digite o código da Carta (ex: 01 a 04): ";
-    scanf(" %s", codigo2);
+    scanf(" %s", cod2);
     printf("Populacao (milhões): ");   
     scanf("%f", &populacao2);
     printf("Area (km²): ");            
@@ -136,12 +136,12 @@ int main() {
     printf("\n== DADOS DAS CARTAS ==\n");
     printf("Carta 1: %sEstado: %c | Codigo: %s\n"
            " Pop: %.2f mi | Area: %.2f km² | PIB: %.2f bi | PTur: %d | Den: %.2f hab/km² | PCap: %.2f R$\n",
-           nomeCidade1, estado1, codigo1,
+           nomeCidade1, estado1, cod1,
            populacao1, area1, pib1, ptTuristico1, denspop1, pibpcap1); 
 
     printf("Carta 2: %sEstado: %c | Codigo: %s\n"
            " Pop: %.2f mi | Area: %.2f km² | PIB: %.2f bi | PTur: %d | Den: %.2f hab/km² | PCap: %.2f R$\n",
-           nomeCidade2, estado2, codigo2,
+           nomeCidade2, estado2, cod2,
            populacao2, area2, pib2, ptTuristico2, denspop2, pibpcap2);
     
       // Comparação de Cartas utilizando estruturas de decisão (if, if-else) com os atributos:
