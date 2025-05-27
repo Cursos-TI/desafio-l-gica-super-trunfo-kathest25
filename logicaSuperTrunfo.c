@@ -5,7 +5,7 @@
 int main() {
     // Definindo as variáveis que armazenam as propriedades das cidades:
     
-    char nomeCidade1[25], nomeCidade2[25];
+    char cidade1[25], cidade2[25];
     char estado1, estado2;
     char cod1[5], cod2[5];
     float populacao1, populacao2;
@@ -18,7 +18,7 @@ int main() {
     // Cadastro das Cartas:
     // Lendo a Carta 1 
     printf("Digite o nome da cidade da carta 1: ");
-    fgets(nomeCidade1, sizeof(nomeCidade1), stdin);
+    fgets(cidade1, sizeof(cidade1), stdin);
     printf("Estado (A-H): ");
     scanf(" %c", &estado1);
     printf("Digite o código da Carta (ex: 01 a 04): ");
@@ -35,7 +35,7 @@ int main() {
 
     //  Lendo a Carta 2 
     printf("Digite o nome da cidade da carta 2: ");
-    fgets(nomeCidade2, sizeof(nomeCidade2), stdin);
+    fgets(cidade2, sizeof(cidade2), stdin);
     printf("Estado (A-H): ");
     scanf(" %c", &estado2);
     printf("Digite o código da Carta (ex: 01 a 04): ";
@@ -136,12 +136,12 @@ int main() {
     printf("\n== DADOS DAS CARTAS ==\n");
     printf("Carta 1: %sEstado: %c | Codigo: %s\n"
            " Pop: %.2f mi | Area: %.2f km² | PIB: %.2f bi | PTur: %d | Den: %.2f hab/km² | PCap: %.2f R$\n",
-           nomeCidade1, estado1, cod1,
+           cidade1, estado1, cod1,
            populacao1, area1, pib1, ptTuristico1, denspop1, pibpcap1); 
 
     printf("Carta 2: %sEstado: %c | Codigo: %s\n"
            " Pop: %.2f mi | Area: %.2f km² | PIB: %.2f bi | PTur: %d | Den: %.2f hab/km² | PCap: %.2f R$\n",
-           nomeCidade2, estado2, cod2,
+           cidade2, estado2, cod2,
            populacao2, area2, pib2, ptTuristico2, denspop2, pibpcap2);
     
       // Comparação de Cartas utilizando estruturas de decisão (if, if-else) com os atributos:
